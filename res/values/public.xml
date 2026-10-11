@@ -4555,4 +4555,12 @@
     <public type="xml" name="m3_list_item_shape_state_list" id="0x7f150004" />
     <public type="xml" name="m3_split_button_inner_corner_size_state_list" id="0x7f150005" />
     <public type="xml" name="m3expressive_button_shape_state_list" id="0x7f150006" />
+    <public type="attr" name="state_liftable" id="0x7f04064e" />
+    <public type="attr" name="state_lifted" id="0x7f04064f" />
+    <public type="attr" name="state_dragged" id="0x7f040650" />
+    <public type="attr" name="state_swiped" id="0x7f040651" />
+    <public type="attr" name="state_error" id="0x7f040652" />
+    <public type="attr" name="state_indeterminate" id="0x7f040653" />
+    <public type="attr" name="state_with_icon" id="0x7f040654" />
+    <public type="attr" name="widthChange" id="0x7f040655" />
 </resources>

@@ -249,7 +249,9 @@
 
     .line 65
     .line 66
-    const-string v1, "prasidhanchan"
+    const-string v1, ""
+
+    # MovieCrate patch: removed previous dev (prasidhanchan) GitHub fetch
 
     .line 67
     .line 68

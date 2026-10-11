@@ -555,7 +555,8 @@
 
     .line 264
     .line 265
-    invoke-static/range {v12 .. v23}, Laj;->a(Lcom/anistation/navigation/Route;Lyz3;Lth4;Ljava/lang/String;ZZLsb2;Lic2;Lsb2;Lkd2;II)V
+    # MovieCrate patch: removed Experimental Settings header row
+    nop
 
     .line 266
     .line 267
@@ -708,7 +709,8 @@
 
     .line 335
     .line 336
-    invoke-static/range {v0 .. v10}, Loi4;->f(Ljava/lang/String;Ljava/lang/String;IZLub2;Lyz3;ZLth4;Lkd2;II)V
+    # MovieCrate patch: removed Discord toggle row (Experimental Settings section)
+    nop
 
     .line 337
     .line 338
@@ -790,7 +792,8 @@
 
     .line 375
     .line 376
-    invoke-static/range {v0 .. v10}, Loi4;->f(Ljava/lang/String;Ljava/lang/String;IZLub2;Lyz3;ZLth4;Lkd2;II)V
+    # MovieCrate patch: removed Discord toggle row (Experimental Settings section)
+    nop
 
     .line 377
     .line 378

@@ -11,10 +11,10 @@
     <string name="abc_searchview_description_voice">Voice search</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
     <string name="about">About</string>
-    <string name="about_subtitle">Built to feel like home with a YouTube-like player, familiar UI, smooth watching, and clean local tracking.</string>
+    <string name="about_subtitle">MovieCrate — Stream movies, web series, and anime in one place. Built for cinephiles, by cinephiles.</string>
     <string name="about_subtitle_1">YouTube-like controls with smooth gestures, mini-player and more.</string>
-    <string name="about_subtitle_2">Continue watching, anime list, progress, and list states stay with you.</string>
-    <string name="about_subtitle_3">Move your anime list using MAL / AniList-style XML workflows.</string>
+    <string name="about_subtitle_2">Continue watching, your list, progress, and watch history stay with you.</string>
+    <string name="about_subtitle_3">Powered by TMDb for metadata and posters.</string>
     <string name="ad_badge">Ad</string>
     <string name="add_to_list">Add to list</string>
     <string name="added">Added</string>
@@ -130,8 +130,8 @@
     <string name="describe_the_issue_you_re_facing">"Describe the issue you're facing"</string>
     <string name="description">Description</string>
     <string name="developer">Developer</string>
-    <string name="disclaimer_1">MovieCrate does not store your watch history, anime list, imported lists, or progress on our servers. Your anime data is saved locally on your device.</string>
-    <string name="disclaimer_2">MovieCrate does not host any files itself but instead only displays content from 3rd party providers. Anime titles, artwork, trademarks, and related metadata belong to their respective owners. MovieCrate is not affiliated with AniList, MyAnimeList, or any other providers.</string>
+    <string name="disclaimer_1">MovieCrate does not store your watch history, list, imported lists, or progress on our servers. Your data is saved locally on your device.</string>
+    <string name="disclaimer_2">MovieCrate does not host any files itself but instead only displays content from 3rd party providers. Movie and TV show titles, artwork, trademarks, and related metadata belong to their respective owners. Metadata and posters provided by TMDb (The Movie Database).</string>
     <string name="disconnect_from">Disconnect from %1$s</string>
     <string name="discord_rich_presence">Discord Rich Presence</string>
     <string name="discord_rich_presence_summary">Shows that you are using MovieCrate on your Discord profile.</string>
@@ -200,7 +200,7 @@ Downloading the newest build."</string>
     <string name="google_api_key">AIzaSyDuA8_I-4zVE78Cx3DrOMUn-gviWqP6Ox4</string>
     <string name="google_app_id">1:801867429014:android:100af3e9571c2fa9b9feb7</string>
     <string name="google_storage_bucket">anistation-app.firebasestorage.app</string>
-    <string name="tmdb_api_key">8265bd1679663a7ea12ac168da84d2e8</string>
+    <string name="tmdb_api_key">192e0b9821564f26f52949758ea3c473</string>
     <string name="tmdb_image_base_url">https://image.tmdb.org/t/p/</string>
     <string name="tmdb_api_base_url">https://api.themoviedb.org/3/</string>
     <string name="moviebox_api_base_url">https://api3.aoneroom.com</string>

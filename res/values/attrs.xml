@@ -1106,4 +1106,14 @@
     <attr name="yearSelectedStyle" format="reference" />
     <attr name="yearStyle" format="reference" />
     <attr name="yearTodayStyle" format="reference" />
+
+    <!-- MovieCrate patch: Added missing SDK 35+ state attrs for apktool 2.10.0 compatibility -->
+    <attr name="state_liftable" format="boolean" />
+    <attr name="state_lifted" format="boolean" />
+    <attr name="state_dragged" format="boolean" />
+    <attr name="state_swiped" format="boolean" />
+    <attr name="state_error" format="boolean" />
+    <attr name="state_indeterminate" format="boolean" />
+    <attr name="state_with_icon" format="boolean" />
+    <attr name="widthChange" format="fraction" />
 </resources>
