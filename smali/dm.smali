@@ -178,11 +178,11 @@
 
     .line 71
     .line 72
-    const-string v7, "episodes"
+    const-string v7, "subject-api/season-info"
 
     .line 73
     .line 74
-    const-string v8, "v2"
+    const-string v8, "wefeed-mobile-bff"
 
     .line 75
     .line 76
@@ -547,11 +547,11 @@
 
     .line 70
     .line 71
-    const-string v7, "genres"
+    const-string v7, "subject-api/list"
 
     .line 72
     .line 73
-    const-string v8, "v2"
+    const-string v8, "wefeed-mobile-bff"
 
     .line 74
     .line 75
@@ -907,11 +907,11 @@
 
     .line 70
     .line 71
-    const-string v7, "home"
+    const-string v7, "tab/ranking-list"
 
     .line 72
     .line 73
-    const-string v8, "v2"
+    const-string v8, "wefeed-mobile-bff"
 
     .line 74
     .line 75
@@ -1252,7 +1252,7 @@
     .line 67
     .line 68
     .line 69
-    const-string v1, "v2"
+    const-string v1, "wefeed-mobile-bff"
 
     .line 70
     .line 71
@@ -1605,11 +1605,11 @@
 
     .line 77
     .line 78
-    const-string v7, "schedules"
+    const-string v7, "tab/ranking-list"
 
     .line 79
     .line 80
-    const-string v8, "v2"
+    const-string v8, "wefeed-mobile-bff"
 
     .line 81
     .line 82
@@ -2120,11 +2120,11 @@
 
     .line 112
     .line 113
-    const-string v7, "suggestions"
+    const-string v7, "subject-api/search/v2"
 
     .line 114
     .line 115
-    const-string v8, "v2"
+    const-string v8, "wefeed-mobile-bff"
 
     .line 116
     .line 117
@@ -2519,11 +2519,11 @@
 
     .line 73
     .line 74
-    const-string v7, "servers"
+    const-string v7, "subject-api/get"
 
     .line 75
     .line 76
-    const-string v8, "v2"
+    const-string v8, "wefeed-mobile-bff"
 
     .line 77
     .line 78
@@ -3294,7 +3294,7 @@
 
     .line 75
     .line 76
-    const-string v8, "v2"
+    const-string v8, "wefeed-mobile-bff"
 
     .line 77
     .line 78

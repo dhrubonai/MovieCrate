@@ -174,15 +174,15 @@
     .line 68
     .line 69
     .line 70
-    const-string v1, "import"
+    const-string v1, "get"
 
     .line 71
     .line 72
-    const-string v7, "anilist"
+    const-string v7, "search"
 
     .line 73
     .line 74
-    const-string v8, "anime-list"
+    const-string v8, "subject-api"
 
     .line 75
     .line 76
@@ -581,7 +581,7 @@
     .line 68
     .line 69
     .line 70
-    const-string v1, "import"
+    const-string v1, "get"
 
     .line 71
     .line 72
@@ -589,7 +589,7 @@
 
     .line 73
     .line 74
-    const-string v8, "anime-list"
+    const-string v8, "subject-api"
 
     .line 75
     .line 76

@@ -56,7 +56,7 @@
     .line 8
     .line 9
     .line 10
-    const-string v0, "https://anistation.top/privacy"
+    const-string v0, "https://moviecrate.app/privacy"
 
     .line 11
     .line 12

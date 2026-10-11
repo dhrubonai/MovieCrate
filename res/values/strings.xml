@@ -200,6 +200,11 @@ Downloading the newest build."</string>
     <string name="google_api_key">AIzaSyDuA8_I-4zVE78Cx3DrOMUn-gviWqP6Ox4</string>
     <string name="google_app_id">1:801867429014:android:100af3e9571c2fa9b9feb7</string>
     <string name="google_storage_bucket">anistation-app.firebasestorage.app</string>
+    <string name="tmdb_api_key">8265bd1679663a7ea12ac168da84d2e8</string>
+    <string name="tmdb_image_base_url">https://image.tmdb.org/t/p/</string>
+    <string name="tmdb_api_base_url">https://api.themoviedb.org/3/</string>
+    <string name="moviebox_api_base_url">https://api3.aoneroom.com</string>
+    <string name="moviebox_web_play_host">https://movie-box.co</string>
     <string name="haptics">Haptics</string>
     <string name="hold_action">Hold action</string>
     <string name="hold_action_fast_forward">Fast forward</string>

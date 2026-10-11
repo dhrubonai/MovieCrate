@@ -187,11 +187,11 @@
     .line 75
     .line 76
     .line 77
-    const-string v1, "reports"
+    const-string v1, "wefeed-mobile-bff"
 
     .line 78
     .line 79
-    const-string v8, "new"
+    const-string v8, "subject-api/get"
 
     .line 80
     .line 81

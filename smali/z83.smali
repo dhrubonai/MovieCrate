@@ -87,7 +87,7 @@
     .line 25
     .line 26
     .line 27
-    const-string v2, "Check out this anime on AniStation: https://anistation.top/anime/"
+    const-string v2, "Check out this title on MovieCrate: https://moviecrate.app/title/"
 
     .line 28
     .line 29

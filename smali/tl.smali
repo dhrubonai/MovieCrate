@@ -728,11 +728,11 @@
 
     .line 252
     .line 253
-    const-string v10, "sources"
+    const-string v10, "subject-api/play-info"
 
     .line 254
     .line 255
-    const-string v11, "v2"
+    const-string v11, "wefeed-mobile-bff"
 
     .line 256
     .line 257
