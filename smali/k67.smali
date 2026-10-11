@@ -1,0 +1,33 @@
+.class public abstract Lk67;
+.super Ljava/lang/Object;
+.source "r8-map-id-17faeaa4e2ea105f16b10ec31fd03082f4cfa6637e1a42b62c06284cbae9c44f"
+
+
+# static fields
+.field public static final a:Ljava/util/concurrent/atomic/AtomicReference;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 2
+
+    .line 1
+    new-instance v0, Ljava/util/concurrent/atomic/AtomicReference;
+
+    .line 2
+    .line 3
+    sget-object v1, Lh95;->P:Lj67;
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/util/concurrent/atomic/AtomicReference;-><init>(Ljava/lang/Object;)V
+
+    .line 6
+    .line 7
+    .line 8
+    sput-object v0, Lk67;->a:Ljava/util/concurrent/atomic/AtomicReference;
+
+    .line 9
+    .line 10
+    return-void
+.end method

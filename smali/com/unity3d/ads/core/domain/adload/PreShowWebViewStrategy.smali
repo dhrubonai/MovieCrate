@@ -1,0 +1,58 @@
+.class public interface abstract Lcom/unity3d/ads/core/domain/adload/PreShowWebViewStrategy;
+.super Ljava/lang/Object;
+.source "r8-map-id-17faeaa4e2ea105f16b10ec31fd03082f4cfa6637e1a42b62c06284cbae9c44f"
+
+
+# virtual methods
+.method public abstract acquireForShow(Lv11;Lcom/unity3d/ads/core/data/model/AdObject;Lvz0;)Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lv11;",
+            "Lcom/unity3d/ads/core/data/model/AdObject;",
+            "Lvz0;",
+            ")",
+            "Ljava/lang/Object;"
+        }
+    .end annotation
+.end method
+
+.method public abstract onAdExpired(Lcom/unity3d/ads/core/data/model/AdObject;Lvz0;)Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/unity3d/ads/core/data/model/AdObject;",
+            "Lvz0;",
+            ")",
+            "Ljava/lang/Object;"
+        }
+    .end annotation
+.end method
+
+.method public abstract onLoadSuccess(Lcom/unity3d/ads/core/data/model/AdObject;Ljava/lang/String;Lgatewayprotocol/v1/AdResponseOuterClass$AdResponse;Lv11;Lic2;Lvz0;)Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/unity3d/ads/core/data/model/AdObject;",
+            "Ljava/lang/String;",
+            "Lgatewayprotocol/v1/AdResponseOuterClass$AdResponse;",
+            "Lv11;",
+            "Lic2;",
+            "Lvz0;",
+            ")",
+            "Ljava/lang/Object;"
+        }
+    .end annotation
+.end method
+
+.method public abstract onShowComplete(Lcom/unity3d/ads/core/data/model/AdObject;Lvz0;)Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/unity3d/ads/core/data/model/AdObject;",
+            "Lvz0;",
+            ")",
+            "Ljava/lang/Object;"
+        }
+    .end annotation
+.end method

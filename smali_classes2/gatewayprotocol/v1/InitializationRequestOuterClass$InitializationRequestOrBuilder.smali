@@ -1,0 +1,216 @@
+.class public interface abstract Lgatewayprotocol/v1/InitializationRequestOuterClass$InitializationRequestOrBuilder;
+.super Ljava/lang/Object;
+.source "r8-map-id-17faeaa4e2ea105f16b10ec31fd03082f4cfa6637e1a42b62c06284cbae9c44f"
+
+# interfaces
+.implements Lcom/google/protobuf/MessageLiteOrBuilder;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lgatewayprotocol/v1/InitializationRequestOuterClass;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "InitializationRequestOrBuilder"
+.end annotation
+
+
+# virtual methods
+.method public abstract containsExtras(Ljava/lang/String;)Z
+.end method
+
+.method public abstract getAnalyticsUserId()Ljava/lang/String;
+.end method
+
+.method public abstract getAnalyticsUserIdBytes()Lcom/google/protobuf/ByteString;
+.end method
+
+.method public abstract getAuid()Lcom/google/protobuf/ByteString;
+.end method
+
+.method public abstract getAuidString()Ljava/lang/String;
+.end method
+
+.method public abstract getAuidStringBytes()Lcom/google/protobuf/ByteString;
+.end method
+
+.method public abstract getCache()Lcom/google/protobuf/ByteString;
+.end method
+
+.method public abstract getClientInfo()Lgatewayprotocol/v1/ClientInfoOuterClass$ClientInfo;
+.end method
+
+.method public abstract getDeviceInfo()Lgatewayprotocol/v1/InitializationRequestOuterClass$InitializationDeviceInfo;
+.end method
+
+.method public abstract getExternalUserIdentifier()Ljava/lang/String;
+.end method
+
+.method public abstract getExternalUserIdentifierBytes()Lcom/google/protobuf/ByteString;
+.end method
+
+.method public abstract getExtras()Ljava/util/Map;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+.end method
+
+.method public abstract getExtrasCount()I
+.end method
+
+.method public abstract getExtrasMap()Ljava/util/Map;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end method
+
+.method public abstract getExtrasOrDefault(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+.end method
+
+.method public abstract getExtrasOrThrow(Ljava/lang/String;)Ljava/lang/String;
+.end method
+
+.method public abstract getGoogleAppId()Ljava/lang/String;
+.end method
+
+.method public abstract getGoogleAppIdBytes()Lcom/google/protobuf/ByteString;
+.end method
+
+.method public abstract getIdfi()Ljava/lang/String;
+.end method
+
+.method public abstract getIdfiBytes()Lcom/google/protobuf/ByteString;
+.end method
+
+.method public abstract getInstallReferrer()Lgatewayprotocol/v1/InitializationRequestOuterClass$InstallReferrer;
+.end method
+
+.method public abstract getInstallSource()Ljava/lang/String;
+.end method
+
+.method public abstract getInstallSourceBytes()Lcom/google/protobuf/ByteString;
+.end method
+
+.method public abstract getIsFirstInit()Z
+.end method
+
+.method public abstract getLegacyFlowUserConsent()Ljava/lang/String;
+.end method
+
+.method public abstract getLegacyFlowUserConsentBytes()Lcom/google/protobuf/ByteString;
+.end method
+
+.method public abstract getModuleInitParams(I)Lgatewayprotocol/v1/ModuleInitParamsOuterClass$ModuleInitParams;
+.end method
+
+.method public abstract getModuleInitParamsCount()I
+.end method
+
+.method public abstract getModuleInitParamsList()Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List<",
+            "Lgatewayprotocol/v1/ModuleInitParamsOuterClass$ModuleInitParams;",
+            ">;"
+        }
+    .end annotation
+.end method
+
+.method public abstract getPrivacy()Lcom/google/protobuf/ByteString;
+.end method
+
+.method public abstract getQuickCapabilities()Lgatewayprotocol/v1/InitializationRequestOuterClass$QuickCapabilities;
+.end method
+
+.method public abstract getSessionId()Lcom/google/protobuf/ByteString;
+.end method
+
+.method public abstract getTcf()Lcom/google/protobuf/ByteString;
+.end method
+
+.method public abstract getUadsInitBlob()Lcom/google/protobuf/ByteString;
+.end method
+
+.method public abstract getUnityBuildGuid()Ljava/lang/String;
+.end method
+
+.method public abstract getUnityBuildGuidBytes()Lcom/google/protobuf/ByteString;
+.end method
+
+.method public abstract getUnityInstallationId()Lcom/google/protobuf/ByteString;
+.end method
+
+.method public abstract getUnityMegaSessionId()Lcom/google/protobuf/ByteString;
+.end method
+
+.method public abstract hasAnalyticsUserId()Z
+.end method
+
+.method public abstract hasAuid()Z
+.end method
+
+.method public abstract hasAuidString()Z
+.end method
+
+.method public abstract hasCache()Z
+.end method
+
+.method public abstract hasClientInfo()Z
+.end method
+
+.method public abstract hasDeviceInfo()Z
+.end method
+
+.method public abstract hasExternalUserIdentifier()Z
+.end method
+
+.method public abstract hasGoogleAppId()Z
+.end method
+
+.method public abstract hasInstallReferrer()Z
+.end method
+
+.method public abstract hasInstallSource()Z
+.end method
+
+.method public abstract hasLegacyFlowUserConsent()Z
+.end method
+
+.method public abstract hasPrivacy()Z
+.end method
+
+.method public abstract hasQuickCapabilities()Z
+.end method
+
+.method public abstract hasTcf()Z
+.end method
+
+.method public abstract hasUadsInitBlob()Z
+.end method
+
+.method public abstract hasUnityBuildGuid()Z
+.end method
+
+.method public abstract hasUnityInstallationId()Z
+.end method
+
+.method public abstract hasUnityMegaSessionId()Z
+.end method

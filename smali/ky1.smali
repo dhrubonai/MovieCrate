@@ -1,0 +1,131 @@
+.class public final synthetic Lky1;
+.super Ljava/lang/Object;
+.source "r8-map-id-17faeaa4e2ea105f16b10ec31fd03082f4cfa6637e1a42b62c06284cbae9c44f"
+
+# interfaces
+.implements Lri3;
+.implements Lay0;
+
+
+# instance fields
+.field public final synthetic x:B
+
+.field public final synthetic y:F
+
+
+# direct methods
+.method public synthetic constructor <init>(FB)V
+    .locals 0
+
+    .line 1
+    iput-byte p2, p0, Lky1;->x:B
+
+    .line 2
+    .line 3
+    iput p1, p0, Lky1;->y:F
+
+    .line 4
+    .line 5
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 6
+    .line 7
+    .line 8
+    return-void
+.end method
+
+
+# virtual methods
+.method public accept(Ljava/lang/Object;)V
+    .locals 1
+
+    .line 1
+    iget-byte v0, p0, Lky1;->x:B
+
+    .line 2
+    .line 3
+    iget p0, p0, Lky1;->y:F
+
+    .line 4
+    .line 5
+    check-cast p1, Lfq4;
+
+    .line 6
+    .line 7
+    packed-switch v0, :pswitch_data_0
+
+    .line 8
+    .line 9
+    .line 10
+    invoke-virtual {p1, p0}, Lfq4;->U(F)V
+
+    .line 11
+    .line 12
+    .line 13
+    return-void
+
+    .line 14
+    :pswitch_0
+    invoke-virtual {p1, p0}, Lfq4;->c(F)V
+
+    .line 15
+    .line 16
+    .line 17
+    return-void
+
+    .line 18
+    nop
+
+    .line 19
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public invoke(Ljava/lang/Object;)V
+    .locals 1
+
+    .line 1
+    iget-byte v0, p0, Lky1;->x:B
+
+    .line 2
+    .line 3
+    iget p0, p0, Lky1;->y:F
+
+    .line 4
+    .line 5
+    check-cast p1, Lio4;
+
+    .line 6
+    .line 7
+    packed-switch v0, :pswitch_data_0
+
+    .line 8
+    .line 9
+    .line 10
+    invoke-interface {p1, p0}, Lio4;->s(F)V
+
+    .line 11
+    .line 12
+    .line 13
+    return-void
+
+    .line 14
+    :pswitch_0
+    invoke-interface {p1, p0}, Lio4;->s(F)V
+
+    .line 15
+    .line 16
+    .line 17
+    return-void
+
+    .line 18
+    nop
+
+    .line 19
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
+.end method
