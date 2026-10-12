@@ -171,7 +171,7 @@
     :have_body
 
     if-nez v1, :body_nonnull
-    const-string v2, "0"
+    const-string v2, ""
     goto :len_done
     :body_nonnull
     array-length v2, v1
