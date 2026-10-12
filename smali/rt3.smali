@@ -910,20 +910,31 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     # MovieCrate patch: sign requests going to aoneroom.com
-    # Get URL from or2.a (hm6 URL builder) and check if it's a MovieBox API call
+    # Wrapped in try/catch to prevent crashes if signing fails
+    :try_start_0
     iget-object v0, p1, Lor2;->a:Lhm6;
+    if-eqz v0, :skip_signing
+
     invoke-virtual {v0}, Lhm6;->toString()Ljava/lang/String;
     move-result-object v0
 
-    # Check if URL contains "aoneroom"
+    if-eqz v0, :skip_signing
+
     const-string v1, "aoneroom"
     invoke-virtual {v0, v1}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
     move-result v1
 
     if-eqz v1, :skip_signing
 
-    # Sign the request
     invoke-static {p1, v0}, Lcom/moviecrate/api/MovieBoxSigner;->signRequest(Lor2;Ljava/lang/String;)V
+    :try_end_0
+    .catch Ljava/lang/Throwable; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :skip_signing
+
+    :catch_0
+    # If signing fails, just continue without signing
+    # The request will get 403 but the app won't crash
 
     :skip_signing
     .line 183

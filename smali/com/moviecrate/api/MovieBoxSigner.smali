@@ -215,7 +215,9 @@
 
     # Build: <ts>|2|<hmac>
     new-instance v2, Ljava/lang/StringBuilder;
-    invoke-direct {v2, p3, p4}, Ljava/lang/StringBuilder;-><init>(J)V
+    invoke-static {p3, p4}, Ljava/lang/Long;->toString(J)Ljava/lang/String;
+    move-result-object v3
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
     const-string v3, "|2|"
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
     invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
