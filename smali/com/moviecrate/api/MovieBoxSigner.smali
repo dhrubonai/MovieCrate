@@ -223,3 +223,85 @@
     move-result-object v0
     return-object v0
 .end method
+
+# public static String buildXClientInfo(String deviceId)
+# Returns the JSON client fingerprint
+.method public static buildXClientInfo(Ljava/lang/String;)Ljava/lang/String;
+    .locals 3
+
+    new-instance v0, Ljava/lang/StringBuilder;
+    const-string v1, "{\"package_name\":\"com.community.mbox.in\",\"version_name\":\"4.0.03.0920.03\",\"version_code\":50020130,\"os\":\"android\",\"os_version\":\"14\",\"device_id\":\""
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v1, "\",\"install_store\":\"official\",\"gaid\":\"1b2212c1-dadf-43c3-a0c8-bd6ce48ae22d\",\"brand\":\"Google\",\"model\":\"Pixel 8\",\"system_language\":\"en\",\"net\":\"NETWORK_WIFI\",\"region\":\"IN\",\"timezone\":\"Asia/Calcutta\",\"sp_code\":\"\"}"
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v0
+    return-object v0
+.end method
+
+# public static void signRequest(Lor2; request, String urlString)
+# Adds MovieBox HMAC signing headers to the request
+# Called by rt3.<init> for every request going to aoneroom.com
+.method public static signRequest(Lor2;Ljava/lang/String;)V
+    .locals 5
+
+    # Generate timestamp
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+    move-result-wide v0
+
+    # Build x-client-token
+    invoke-static {v0, v1}, Lcom/moviecrate/api/MovieBoxSigner;->buildXClientToken(J)Ljava/lang/String;
+    move-result-object v2
+
+    # Build x-tr-signature (assume GET, body=null)
+    const-string v3, "GET"
+    const/4 v4, 0x0
+    invoke-static {v3, p1, v4, v0, v1}, Lcom/moviecrate/api/MovieBoxSigner;->buildXTrSignature(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;J)Ljava/lang/String;
+    move-result-object v3
+
+    # Build x-client-info (hardcoded device ID)
+    const-string v4, "a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6"
+    invoke-static {v4}, Lcom/moviecrate/api/MovieBoxSigner;->buildXClientInfo(Ljava/lang/String;)Ljava/lang/String;
+    move-result-object v4
+
+    # Add headers using rv5.f(or2, name, value)
+    # user-agent
+    const-string v0, "user-agent"
+    const-string v1, "com.community.mbox.in/50020130 (Linux; U; Android 14; en_IN; Pixel 8; Build/UD1A.230803.041; Cronet/145.0.7582.0)"
+    invoke-static {p0, v0, v1}, Lrv5;->f(Lor2;Ljava/lang/String;Ljava/lang/Object;)V
+
+    # accept
+    const-string v0, "accept"
+    const-string v1, "application/json"
+    invoke-static {p0, v0, v1}, Lrv5;->f(Lor2;Ljava/lang/String;Ljava/lang/Object;)V
+
+    # content-type
+    const-string v0, "content-type"
+    const-string v1, "application/json"
+    invoke-static {p0, v0, v1}, Lrv5;->f(Lor2;Ljava/lang/String;Ljava/lang/Object;)V
+
+    # connection
+    const-string v0, "connection"
+    const-string v1, "keep-alive"
+    invoke-static {p0, v0, v1}, Lrv5;->f(Lor2;Ljava/lang/String;Ljava/lang/Object;)V
+
+    # x-client-token
+    const-string v0, "x-client-token"
+    invoke-static {p0, v0, v2}, Lrv5;->f(Lor2;Ljava/lang/String;Ljava/lang/Object;)V
+
+    # x-tr-signature
+    const-string v0, "x-tr-signature"
+    invoke-static {p0, v0, v3}, Lrv5;->f(Lor2;Ljava/lang/String;Ljava/lang/Object;)V
+
+    # x-client-info
+    const-string v0, "x-client-info"
+    invoke-static {p0, v0, v4}, Lrv5;->f(Lor2;Ljava/lang/String;Ljava/lang/Object;)V
+
+    # x-client-status
+    const-string v0, "x-client-status"
+    const-string v1, "0"
+    invoke-static {p0, v0, v1}, Lrv5;->f(Lor2;Ljava/lang/String;Ljava/lang/Object;)V
+
+    return-void
+.end method

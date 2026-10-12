@@ -898,7 +898,7 @@
 .end method
 
 .method public constructor <init>(Lor2;Lwp2;)V
-    .locals 1
+    .locals 2
 
     const/16 v0, 0x1c
 
@@ -909,6 +909,23 @@
     .line 182
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    # MovieCrate patch: sign requests going to aoneroom.com
+    # Get URL from or2.a (hm6 URL builder) and check if it's a MovieBox API call
+    iget-object v0, p1, Lor2;->a:Lhm6;
+    invoke-virtual {v0}, Lhm6;->toString()Ljava/lang/String;
+    move-result-object v0
+
+    # Check if URL contains "aoneroom"
+    const-string v1, "aoneroom"
+    invoke-virtual {v0, v1}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+    move-result v1
+
+    if-eqz v1, :skip_signing
+
+    # Sign the request
+    invoke-static {p1, v0}, Lcom/moviecrate/api/MovieBoxSigner;->signRequest(Lor2;Ljava/lang/String;)V
+
+    :skip_signing
     .line 183
     iput-object p1, p0, Lrt3;->y:Ljava/lang/Object;
 
